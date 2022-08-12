@@ -1,0 +1,142 @@
+body {
+    background-color: rgb(14, 14, 14);
+    margin: 0px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.container {
+    width: 85%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+}
+
+#left {
+    width: 30%;
+    height: 100vh;
+    background-color: rgb(0, 173, 127);
+    text-align: center;
+}
+
+#left h1 {
+    color: rgb(255, 251, 255);
+    font-size: 35px;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    padding: 150px 20px 0 20px;
+}
+
+#left p {
+    padding: 0px 30px;
+    padding-bottom: 5rem;
+    text-transform: capitalize;
+    color: rgb(137, 248, 229);
+    line-height: 20px;
+}
+
+.sign {
+    border: 2px solid rgb(174, 234, 228);
+    color: rgb(231, 255, 255);
+    text-transform: uppercase;
+    padding: 18px 80px;
+    border-radius: 30px;
+    font-family: sans-serif;
+    font-weight: 700 !important;
+    outline: 3px;
+}
+
+#left h3 {
+    text-align: left;
+    padding-left: 50px;
+    padding-top: 20px;
+    font-family: sans-serif;
+    color: rgb(245,255,254);
+    text-shadow: 2px 2px 2px lightgreen;
+}
+
+#right {
+    width: 70%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+#right h1 {
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: rgb(8, 179, 134);
+    text-shadow: 5px 5px 5px pink;
+    padding-top: 40px;
+}
+
+.web {
+    margin: auto;
+    font-size: 30px;
+    color: black !important;
+    width: 20%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#right p {
+    color: rgb(138, 138, 138);
+    padding: 30px 0px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.input i {
+    position: absolute;
+    left: 165px;
+    top: 8px;
+    padding: 25px;
+
+}
+
+.input input[class="box"] {
+    padding-left: 40px;
+}
+
+.box {
+    width: 50%;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgb(230, 248, 232);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.up {
+    background-color: rgb(0, 173, 127);
+    margin-top: 50px;
+    z-index: 5;
+}
+.box:hover {
+    outline: 2px solid blue;
+}
+.sign:hover {
+    outline: 2px solid skyblue;
+}
+#left::before {
+content: '';
+position: absolute;
+bottom: -3%;
+left: 2%;
+breath: 20px;
+length: 20px;
+height: 20px;
+background-color: rgb(26,181,139);
+border-radius: 50%;
+z-index: 1;
+}
